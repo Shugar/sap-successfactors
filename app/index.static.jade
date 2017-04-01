@@ -12,131 +12,53 @@ head
     require('initialize');
 
 body
-  .head
-    .container
-      .head__logo
-      .head__title
-        | открыта вакансия
-        br
-        span Специалист по продажам малому <br> и среднему бизнесу
-      .head__subtitle
-        | Пройди интервью не выходя из дома
-      a.head__button.c__button(href="https://ap.skillaz.co/landing/g2JfgDg2cE3kET8Mj/start?birthday=true&cells=true&education=true&citizenship=true")
-        | Присоединиться к команде «Билайн»
-      a.head__more(href="#more")
-        | Подробнее о вакансии
+  .main
+    a.main-skillaz(href="#")
+    a.main-logo(href="#")
 
-  .sticky-header.sticky-header--2
-    .container
-      .sticky-header__left
-        .sticky-header__logo
-        .sticky-header__info
-          .sticky-header__title
-            | открыта вакансия
-          .sticky-header__subtitle
-            | Специалист по продажам малому и среднему бизнесу
-      .sticky-header__right
-        a.c__button.c__button--small(href="https://ap.skillaz.co/landing/g2JfgDg2cE3kET8Mj/start?birthday=true&cells=true&education=true&citizenship=true")
-          | Пройти Онлайн-интервью
-  .you
-    .container
-      | Ты всегда стараешься быть на острие событий? Тебя ждешь от работы динамики и разнообразия? Тогда наша вакансия для тебя.
-
-  .invite
-    .container
-      .invite__text
-        | Приглашаем на позицию Менеджера по продажам малому и среднему бизнесу.
-      .invite__text
-        | Малый и средний бизнес – это самый перспективный и “живой” сегмент рынка, где есть простор  для инноваций, экспериментов и ярких стремительных результатов. 
-      .invite__text
-        | Работая с нами, ты сможешь определять будущее клиентов, предлагая им не только телеком-решения, но и самые современные технологии от облачных АТС и мобильного CRM до систем M2M и аналитики  с использованием технологий-Big data. Все пилотные проекты новых продуктов в «Билайне» запускаются именно в SME, и ты сможешь предлагать клиентом то, что никто  не пробовал на рынке до этого! 
+    .main-content
+      .main-content__title
+        | Добро пожаловать  <br/> на собеседование будущего
+      .main-webcam
+        .main-webcam__icon
+        .main-webcam__text
+          | Посмотрите в камеру <br/>  чтобы продолжить
+    
+    .main-button
+      | Зарегистрировать вручную
   
-  .should
-    .container
-      .c__title.should__title
-        | Вот что тебе предстоит делать:
-      
-      .should-list
-        .should-list__item.should-list__item--1
-          .should-list__icon
-          .should-list__text
-            | Находить лучшие решения для клиентов, на основе их текущих потребностей. Мы работаем с компаниями, представляющими все индустрии рынка. Ты всегда должен «держать руку на пульсе»  и находить подход к клиентам с самыми разными и сложными запросами.
-  
-        .should-list__item.should-list__item--2
-          .should-list__icon
-          .should-list__text
-            | Заниматься поиском и привлечением новых клиентов, а также развивать существующих
-        
-        .should-list__item.should-list__item--3
-          .should-list__icon
-          .should-list__text
-            | Встречаться с клиентами, у тебя будет несколько встреч  в день –ты же готов делать все, для самого лучшего результата!
-      
-      .should-bottom
-        | Мы поменяли привычный мир офисной работы. У нас ты сможешь достигать еще более высоких результатов в современной среде «BeeFree», работая везде, где есть интернет и ноутбук. 
-  
-  .waiting
-    .container
-      .c__title.waiting__title
-        | Мы ждем тебя, если ты:
-
-      .waiting-list
-        .waiting-list__item
-          .waiting-list__round
-          | Имеешь отличные презентационные и коммуникативные навыки
-        .waiting-list__item
-          .waiting-list__round
-          | Можешь блестяще проводить деловые встречи на самом высоком уровне с первыми лицами компаний
-        .waiting-list__item
-          .waiting-list__round
-          | Активен и готов постоянно профессионально развиваться
-        .waiting-list__item
-          .waiting-list__round
-          | Тебя «драйвят» интересные задачи
-        .waiting-list__item
-          .waiting-list__round
-          | На «ты» с MS Office и знаешь, как найти в интернете всю необходимую информацию
-      
-      .waiting-bottom
-        | Ты станешь частью глобальной компании и отличной команды профессионалов, где принято открыто общаться и всегда приветствуются новые идеи. 
-  
-  .suggest
-    .container
-      .c__title.suggest__title
-        | Мы предлагаем:
-
-      .suggest-list
-        .suggest-item.suggest-item--1
-          .suggest-item__icon
-          .suggest-item__text
-            | Достойную оплату труда: оклад + ежемесячная премия – мы ценим твою работу и готовы отмечать твои достижения!
-        .suggest-item.suggest-item--2
-          .suggest-item__icon
-          .suggest-item__text
-            | Служебную сотовую связь – чтобы ты всегда был на связи с командой  и клиентами!
-        .suggest-item.suggest-item--3
-          .suggest-item__icon
-          .suggest-item__text
-            | Возмещение ГСМ – тебе предстоят постоянные встречи с клиентами,  а мы компенсируем тебе топливные расходы.
-      .suggest-list
-        .suggest-item.suggest-item--4
-          .suggest-item__icon
-          .suggest-item__text
-            | Полис добровольного медицинского страхования, обслуживаемый  в лучших клиниках города – чтобы ты всегда был в строю!
-        .suggest-item.suggest-item--5
-          .suggest-item__icon
-          .suggest-item__text
-            | Корпоративное обучение, развитие и возможности карьерного роста – чтобы ты рос и развивался  вместе с нами!
-        .suggest-item.suggest-item--6
-          .suggest-item__icon
-          .suggest-item__text
-            | Официальное трудоустройство  и полное соблюдение трудового законодательства.
-
-      a.suggest__button.c__button(href="https://ap.skillaz.co/landing/g2JfgDg2cE3kET8Mj/start?birthday=true&cells=true&education=true&citizenship=true")
-        | Присоединиться к команде «Билайн»
-
-  .footer
-    .container
-      | Сервис предоставлен компанией Skillaz.
-      br
-      | В случае технических неполадок звоните: <span>+7 (499) 110-35-73</span>
+  .registration
+    .registration-overlay
+    .registration-inner
+      .registration-inner__title
+        | Регистрация
+      .registration-form
+        .registration-form__group
+          .registration-form__field
+            input.registration-form__input(type="text" id="input-1" required)
+            label(for="input-1").registration-form__label Фамилия
+          
+          .registration-form__field
+            input.registration-form__input(type="text" id="input-2" required)
+            label(for="input-2").registration-form__label Имя
+          
+          .registration-form__field
+            input.registration-form__input(type="text" id="input-3" required)
+            label(for="input-3").registration-form__label Отчество
+          
+        .registration-form__group
+          .registration-form__field.registration-form__field--big
+            input.registration-form__input(type="text" id="input-4" required)
+            label(for="input-4").registration-form__label E-mail
+          
+          .registration-form__field
+            input.registration-form__input(type="text" id="input-5" required)
+            label(for="input-5").registration-form__label Номер телефона
+          
+        .registration-form__group
+          .registration-form__submit(type="submit")
+            | Зарегистироваться
+          .registration-form__cancel
+            | Отмена
+    
+    

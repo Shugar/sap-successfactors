@@ -1,6 +1,7 @@
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Officina Book";
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 * {
@@ -9,20 +10,4 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 30px;
-  text-align: left;
-}
-
-
-@media (max-width: 425px) {
-  .container {
-    padding: 0 18px;
-  }
 }
