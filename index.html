@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <script src="javascripts/vendor.js"></script>
+  <script src="javascripts/app.js"></script>
+  <script>
+    require('initialize');
+    
+  </script>
+</head>
+<body>
+  <div class="main"><a href="#" class="main-skillaz"></a><a href="#" class="main-logo"></a>
+    <div class="main-content">
+      <div class="main-content__title">Добро пожаловать  <br/> на собеседование будущего</div>
+      <div class="main-webcam">
+        <div class="main-webcam__icon"></div>
+        <div class="main-webcam__text">Посмотрите в камеру <br/>  чтобы продолжить</div>
+      </div>
+    </div>
+    <div class="main-button">Зарегистрировать вручную</div>
+  </div>
+  <div class="registration">
+    <div class="registration-overlay"></div>
+    <div class="registration-inner">
+      <div class="registration-inner__title">Регистрация</div>
+      <div class="registration-form">
+        <div class="registration-form__group">
+          <div class="registration-form__field">
+            <input type="text" id="input-1" required class="registration-form__input">
+            <label for="input-1" class="registration-form__label">Фамилия</label>
+          </div>
+          <div class="registration-form__field">
+            <input type="text" id="input-2" required class="registration-form__input">
+            <label for="input-2" class="registration-form__label">Имя</label>
+          </div>
+          <div class="registration-form__field">
+            <input type="text" id="input-3" required class="registration-form__input">
+            <label for="input-3" class="registration-form__label">Отчество</label>
+          </div>
+        </div>
+        <div class="registration-form__group">
+          <div class="registration-form__field registration-form__field--big">
+            <input type="text" id="input-4" required class="registration-form__input">
+            <label for="input-4" class="registration-form__label">E-mail</label>
+          </div>
+          <div class="registration-form__field">
+            <input type="text" id="input-5" required class="registration-form__input">
+            <label for="input-5" class="registration-form__label">Номер телефона</label>
+          </div>
+        </div>
+        <div class="registration-form__group">
+          <div type="submit" class="registration-form__submit">Зарегистироваться</div>
+          <div class="registration-form__cancel">Отмена</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
