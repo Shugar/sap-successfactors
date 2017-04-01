@@ -1,0 +1,28 @@
+.invite {
+  padding: 60px 0 30px;
+
+  font-size: 21px;
+  color: rgba(61,70,87,0.60);
+  line-height: 30px;
+
+  .container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .invite {
+    padding: 24px 0 0;
+    font-size: 14px;
+    color: rgba(61,70,87,0.60);
+    line-height: 18px;
+
+    &__text {
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

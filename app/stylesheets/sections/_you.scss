@@ -1,0 +1,25 @@
+.you {
+  font-size: 21px;
+  color: rgba(61,70,87,0.60);
+  line-height: 30px;
+  background: #EEEAE5;
+  padding: 34px 0;
+
+  .container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .you {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 425px) {
+  .you {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
