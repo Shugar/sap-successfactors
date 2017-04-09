@@ -1,0 +1,145 @@
+.testing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  z-index: 2;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  display: none;
+
+  &--active {
+    display: flex;
+
+    .testing-overlay {
+      opacity: 0.999;
+    }
+
+    .testing-inner {
+      transform: translate3d(0,0,0);
+    }
+  }
+
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba(62,71,87,0.70);
+    height: 100%;
+    width: 100%;
+
+    opacity: 0.001;
+    transition: opacity .2s ease;
+    will-change: opacity;
+  }
+
+  &-inner {
+    width: 100%;
+    max-width: 70vw;
+    padding: 2.8vw;
+    font-weight: 400;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: 0 12px 54px 0 rgba(0,0,0,0.50);
+    border-radius: 16px;
+
+    z-index: 3;
+
+    transform: translate3d(0,-150%,0);
+    transition: transform .2s ease;
+    will-change: transform;
+  }
+
+  &-title {
+    font-weight: 400;
+    font-size: 2.5vw;
+    color: #3E4757;
+    letter-spacing: 0;
+    line-height: 3vw;
+  }
+
+  &-subtitle {
+    margin-top: 1vw;
+
+    font-size: 1.4vw;
+    color: #3E4757;
+    letter-spacing: 0;
+    line-height: 2vw;
+  }
+
+  &-list {
+    margin-top: 2.6vw;
+  }
+
+  &-list__title {
+    margin-bottom: 0.6vw;
+    font-size: 0.8vw;
+    color: #9299A2;
+    letter-spacing: 1.1px;
+    line-height: 1.6vw;
+  }
+
+  &-list__item {
+    font-size: 1.5vw;
+    color: #3E4757;
+    letter-spacing: 0;
+    position: relative;
+
+    padding-left: 18px;
+    margin-bottom: 1vw;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      height: 10px;
+      width: 10px;
+      background: #E67E1A;
+      border-radius: 100px;
+    }
+  }
+
+  &-buttons {
+    margin-top: 2.6vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  &-buttons__submit {
+    margin-right: 3.1vw;
+    padding: 0.8vw 1.6vw;
+
+    background: #E67E1A;
+    border-radius: 8px;
+
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 3vw;
+
+    cursor: pointer;
+  }
+
+  &-buttons__cancel {
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: #74A3C7;
+    letter-spacing: 0;
+    line-height: 3vw;
+
+    cursor: pointer;
+  }
+}
