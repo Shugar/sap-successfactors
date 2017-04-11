@@ -1,0 +1,36 @@
+.loader {
+  background: url('../images/background.jpg') no-repeat center / cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &__inner {
+    height: 25rem;
+    width: 25rem;
+
+    background: #E67E1A;
+    box-shadow: 0 0 9rem 0 #BD6F25;
+    border-radius: 25rem;
+
+    position: relative;
+  }
+
+  &__inner:after {
+    content: '';
+    background: url('../images/dots.svg') no-repeat center center / contain;
+    height: 36px;
+    width: 168px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
