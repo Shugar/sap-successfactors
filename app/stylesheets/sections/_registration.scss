@@ -162,4 +162,15 @@
 
     cursor: pointer;
   }
+
+  &-form__disclamer {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #616161;
+
+    a {
+      color: #64B5F6;
+      text-decoration: underline;
+    }
+  }
 }

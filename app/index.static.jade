@@ -12,23 +12,21 @@ head
     require('initialize');
 
 body
-  .loader
-    .loader__inner
   .main
     a.main-skillaz(href="#")
     a.main-logo(href="#")
 
     .main-content
       .main-content__title
-        | Добро пожаловать  <br/> на собеседование будущего
+        | Добро пожаловать <br/> на собеседование будущего
       .main-webcam
         .main-webcam__icon
         .main-webcam__text
-          | Посмотрите в камеру <br/>  чтобы продолжить
-    
+          | Посмотрите в камеру <br/> чтобы продолжить
+
     .main-button
       | Зарегистрировать вручную
-  
+
   .registration
     .registration-overlay
     .registration-inner
@@ -39,28 +37,28 @@ body
           .registration-form__field
             input.registration-form__input(type="text" id="input-1" required)
             label(for="input-1").registration-form__label Фамилия
-          
+
           .registration-form__field
             input.registration-form__input(type="text" id="input-2" required)
             label(for="input-2").registration-form__label Имя
-          
+
           .registration-form__field
             input.registration-form__input(type="text" id="input-3" required)
             label(for="input-3").registration-form__label Отчество
-          
+
         .registration-form__group
           .registration-form__field.registration-form__field--big
             input.registration-form__input(type="text" id="input-4" required)
             label(for="input-4").registration-form__label E-mail
-          
+
           .registration-form__field
             input.registration-form__input(type="text" id="input-5" required)
             label(for="input-5").registration-form__label Номер телефона
-          
+
         .registration-form__group
           .registration-form__submit(type="submit")
             | Зарегистироваться
           .registration-form__cancel
             | Отмена
-    
-    
+        .registration-form__disclamer
+          | Регистрируясь, вы соглашаетесь с <a href="http://huygovno.com/askdjfhlakjsdhf/asdkjfhadfjkh?87">нашей политикой обработки персональных данных</a>
